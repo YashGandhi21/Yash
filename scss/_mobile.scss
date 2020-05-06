@@ -1,0 +1,197 @@
+// widescreens
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// desktop and laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// tablets and small laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bio-image"
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+
+    grid-template-columns: 1fr;
+  }
+
+  .about-info1 {
+    grid-template-areas:
+      "job-4"
+      "job-5";
+
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+
+    img {
+      width: 100%;
+      width: 250px;
+      height: 250px;
+      border-radius: 5%;
+      border: $secondary-color 3px solid;
+
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .btn-dark {
+    width: 250px;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    border-radius: 32px;
+    margin: auto;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+
+    background: darken($color: $primary-color, $amount: 50);
+    color: white;
+  }
+
+  .btn-light {
+    width: 250px;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    border-radius: 32px;
+    margin: auto;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+
+    background: lighten($color: $primary-color, $amount: 50);
+    color: #333;
+  }
+}
+
+// smart phones
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+
+    img {
+      width: 100%;
+      width: 200px;
+      height: 200px;
+      border-radius: 5%;
+      border: $secondary-color 3px solid;
+
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .btn-dark {
+    width: 200px;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    border-radius: 32px;
+    margin: auto;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+
+    background: darken($color: $primary-color, $amount: 50);
+    color: white;
+  }
+
+  .btn-light {
+    width: 200px;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    border-radius: 32px;
+    margin: auto;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+
+    background: lighten($color: $primary-color, $amount: 50);
+    color: #333;
+  }
+}
