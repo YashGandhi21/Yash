@@ -221,6 +221,7 @@ main {
       transition: all 0.5s ease-out; }
 
 .boxes {
+  padding: 20px 10px 10px 20px;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
