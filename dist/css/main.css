@@ -280,6 +280,7 @@ main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
+      padding-right: 10px;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,
