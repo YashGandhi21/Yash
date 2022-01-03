@@ -97,9 +97,9 @@ main {
 
   grid-gap: 50px;
 
-  grid-template-areas: "job-4 job-5";
+  grid-template-areas: "job-4 job-5 job-6";
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .job-4 {
