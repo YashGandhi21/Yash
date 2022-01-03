@@ -216,8 +216,8 @@ main#home h1 {
   padding-top: 50px;
   display: grid;
   grid-gap: 50px;
-  grid-template-areas: "job-4 job-5";
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "job-4 job-5 job-6";
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .job-4 {
@@ -318,7 +318,8 @@ main#home h1 {
 }
 .btn:hover,
 .btn-dark:hover,
-.btn-light:hover {
+.btn-light:hover, 
+.btn1:hover {
   background: #e7113e;
   color: #000;
 }
@@ -331,6 +332,17 @@ main#home h1 {
 .btn-light {
   background: #c4c4c4;
   color: #333;
+}
+
+.btn1 {
+  width: 260px;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  border-radius: 32px;
+  background: black;
+  color: white;
 }
 
 #main-footer {
@@ -382,8 +394,8 @@ main#home h1 {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     border: solid 3px #e7113e;
   }
